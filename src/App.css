@@ -1,0 +1,41 @@
+/* 
+Here’s a summary of your **today’s progress** based on what we worked on:
+
+---
+
+### **Frontend**
+
+* Implemented a **comment like button** using React/Redux Toolkit (`ShowAllComments.tsx`).
+* Used `createAsyncThunk` (`courseLikeThunk`) to send like requests to backend.
+* Displayed **like count** next to the like button.
+* Updated **UI instantly** when a user likes/unlikes a comment.
+* Handled **toggle like** (like → unlike → like) for the same user.
+* Fixed **avatar/comment user info disappearing** issue by properly populating `user` in backend.
+* Managed **state for likes** using local state (`useState`) and Redux.
+
+---
+
+### **Backend**
+
+* Updated `course.service.ts` to **toggle likes** on comments.
+* Used `mongoose.Types.ObjectId` to fix TypeScript errors when pushing string IDs into ObjectId arrays.
+* Populated **comment owner** and **users who liked** for frontend display.
+* Returned **comment with likes and count** to frontend.
+* Ensured **duplicate likes are prevented** using toggle logic instead of `$addToSet`.
+* Improved **error handling** for missing comments.
+
+---
+
+### **MongoDB**
+
+* Updated `comment.schema.ts` to store `likes` as **array of ObjectId references** to `User`.
+* Ensured proper **ObjectId conversion** when adding/removing likes.
+* Populated related fields (`user` and `likes`) for frontend display.
+* Counted **likes using `likes.length`** after populating users.
+
+---
+
+If you want, I can also make a **visual diagram showing the like flow** from frontend → backend → MongoDB so it’s easier to review. Do you want me to do that?
+ */
+
+/* 28 large font */
