@@ -2,7 +2,6 @@ import { useAppDispatch, useAppSelector } from "@/app/hook";
 import { Course } from "@/components/Course";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { resetCourses } from "@/features/courses/course.slice";
 import { getAllCoursesThunk } from "@/features/courses/course.thunk";
 import { useEffect } from "react";
 

@@ -1,12 +1,10 @@
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/app/hook";
 import { getCourseByIdThunk } from "@/features/courses/course.thunk";
 import DescriptionSkeleton from "@/components/DescriptionSkeleton";
-import { ArrowLeft, User } from "lucide-react";
-import CourseSection from "./CommentSection";
+import { ArrowLeft } from "lucide-react";
 import CommentSection from "./CommentSection";
-import { Separator } from "@radix-ui/react-dropdown-menu";
 import ReactMarkdown from "react-markdown";
 
 export default function CourseDetailPage() {

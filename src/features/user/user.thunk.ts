@@ -1,5 +1,5 @@
 import { api } from "@/api/axios";
-import type { AuthUser, Login, Signup, TokenResponse } from "@/types/type";
+import type { AuthUser, Login, Signup } from "@/types/type";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import toast from "react-hot-toast";
 

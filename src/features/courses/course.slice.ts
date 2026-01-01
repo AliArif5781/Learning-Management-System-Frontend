@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import type { CourseState, Course } from "@/types/type";
+import type { CourseState } from "@/types/type";
 import {
   courseLikeThunk,
   createCommentThunk,

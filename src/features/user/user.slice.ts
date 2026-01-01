@@ -53,7 +53,7 @@ const userSlice = createSlice({
         state.loading.signInLoading = true;
         state.error = null;
       })
-      .addCase(loginUserThunk.fulfilled, (state, action) => {
+      .addCase(loginUserThunk.fulfilled, (state) => {
         state.loading.signInLoading = false;
         // state.user = action.payload.login;
       })
@@ -67,7 +67,7 @@ const userSlice = createSlice({
         state.loading.signUpLoading = true;
         state.error = null;
       })
-      .addCase(signupUserThunk.fulfilled, (state, action) => {
+      .addCase(signupUserThunk.fulfilled, (state) => {
         state.loading.signUpLoading = false;
         // state.user = action.payload.user;
       })

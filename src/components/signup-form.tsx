@@ -1,12 +1,6 @@
 import { useAppDispatch, useAppSelector } from "@/app/hook";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Field,
   FieldDescription,
@@ -17,11 +11,7 @@ import { Input } from "@/components/ui/input";
 import { authenticator } from "@/features/ImageKit/Authenticator";
 import { getOptimizedMedia } from "@/features/ImageKit/OptimizedMedia";
 import { clearError } from "@/features/user/user.slice";
-import {
-  fetchProfileThunk,
-  loginUserThunk,
-  signupUserThunk,
-} from "@/features/user/user.thunk";
+import { fetchProfileThunk, signupUserThunk } from "@/features/user/user.thunk";
 import type { MediaType, UploadResponse } from "@/types/type";
 import { IKContext, IKUpload } from "imagekitio-react";
 import { useState, type FormEvent } from "react";

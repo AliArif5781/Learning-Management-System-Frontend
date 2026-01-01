@@ -3,10 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import type { Course } from "@/types/type";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useAppDispatch, useAppSelector } from "@/app/hook";
-import { getAllCoursesThunk } from "@/features/courses/course.thunk";
-import { Button } from "./ui/button";
-import ReactMarkdown from "react-markdown";
 
 interface InfoCardProps {
   course: Course;
@@ -27,7 +23,6 @@ export const getLevelBadgeVariant = (level: string) => {
 
 export function Course({ course }: InfoCardProps) {
   const navigate = useNavigate();
-  const dispatch = useAppDispatch();
 
   const hasMedia = Boolean(course.mediaUrl);
   const [mediaLoading, setMediaLoading] = useState(hasMedia);

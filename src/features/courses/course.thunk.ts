@@ -1,5 +1,5 @@
 import { api } from "@/api/axios";
-import type { AuthUser, CreateCourse, likeUser } from "@/types/type";
+import type {  CreateCourse, likeUser } from "@/types/type";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getAllCoursesThunk = createAsyncThunk(

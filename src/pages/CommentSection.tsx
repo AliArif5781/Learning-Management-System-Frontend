@@ -1,7 +1,7 @@
 import { useAppDispatch, useAppSelector } from "@/app/hook";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import {  CardContent } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { createCommentThunk } from "@/features/courses/course.thunk";
 import { useState } from "react";

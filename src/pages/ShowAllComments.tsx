@@ -5,7 +5,6 @@ import { ThumbsUp } from "lucide-react";
 import { useAppDispatch, useAppSelector } from "@/app/hook";
 import { courseLikeThunk } from "@/features/courses/course.thunk";
 import { useState } from "react";
-import Show from "@/components/CommentLikeUsers";
 import CommentLikeHover from "@/components/CommentLikeUsers";
 
 interface ShowAllCommentsProps {
@@ -84,7 +83,6 @@ const ShowAllComments = ({ comment }: ShowAllCommentsProps) => {
               {comment.likes?.length || 0}
             </span>
 
-            {/* Hover Card (ABOVE 👍) */}
             {showLikes && (
               <div className="absolute bottom-full left-0 mb-2 z-50">
                 <CommentLikeHover commentId={comment._id} />
